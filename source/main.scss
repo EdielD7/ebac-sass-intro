@@ -1,19 +1,21 @@
-$mainColor: #eee;
-$secondaryColor: #6d1313;
+@use 'config/reset';
+@use 'config/colors';
+@use 'sections/produtos';
+
 
 body {
-    background-color: $mainColor;
+    background-color: colors.$bgColor;
 }
 
 header {
     h1 {
-        color: $secondaryColor;
+        color: colors.$secondaryColor;
     }
 }
 
 button {
-    background-color: $secondaryColor;
-    color: $mainColor;
+    background-color: colors.$secondaryColor;
+    color: colors.$mainColor;
     &:hover {
         background-color: red;
     }
