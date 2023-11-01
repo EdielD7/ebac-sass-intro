@@ -2,11 +2,11 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  font-family: Roboto, sans-serif;
 }
 
 body {
-  background-color: #ccc;
+  background-color: #dfe6e9;
 }
 
 .container {
@@ -17,8 +17,9 @@ body {
 
 header {
   padding: 16px 0;
-  background-color: rgb(241, 241, 126);
+  background-color: #6d1313;
   text-align: center;
+  color: #fff;
 }
 
 .form-container {
@@ -27,11 +28,20 @@ header {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  max-width: 760px;
+}
+.form-container h2 {
+  font-size: 3em;
+  text-align: center;
 }
 .form-container form {
   width: 100%;
   max-width: 480px;
   margin-top: 40px;
+}
+.form-container form label {
+  font-weight: bold;
+  cursor: pointer;
 }
 .form-container form input {
   width: 100%;
@@ -40,13 +50,27 @@ header {
   display: block;
   background-color: transparent;
   border: none;
-  border-bottom: 1px solid #000;
+  border-bottom: 3px solid #e17055;
 }
 .form-container form button {
   width: 100%;
   padding: 8px;
   margin-bottom: 16px;
   display: block;
+  background-color: #6d1313;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  color: #fff;
+}
+.form-container form button:hover {
+  background-color: #ae1e1e;
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    max-width: 80%;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
